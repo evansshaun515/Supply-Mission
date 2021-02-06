@@ -74,7 +74,25 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
 
-  
+  if (keyDown('right_arrow'))
+  {
+	  helicopterSprite.x = helicopterSprite.x + 5;
+	  
+  }
+
+  if (keyDown('left_arrow'))
+  {
+	  helicopterSprite.x = helicopterSprite.x -5;
+  }
+
+  if (keyDown('space'))
+  {
+	  var packageBody_options = 
+	  {
+		  isStatic:false
+	  }
+  }
+
   drawSprites();
   
   
